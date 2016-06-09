@@ -1,0 +1,169 @@
+
+
+@font-face {
+  font-family: 'segoe-light';
+  src: url('../font/SEGOEUIL.ttf'); /* IE9 Compat Modes */
+}
+body{
+	font-family: 'segoe-light',Arial;
+}
+.mainWrapper {
+  background: url("../images/mainBG.jpg") no-repeat;
+  height: 800px;
+  background-size: cover;
+  border-bottom:5px solid #F44B14;
+}
+
+.mainWrapper {
+  header {
+    height: 121px;
+    border-bottom: 1px solid #6c6c50;
+  } 
+  .navbar-nav{
+	    padding-top: 49px;
+    li a{
+      color:#FFF;
+	  font-size:15px;
+    }
+    li a:hover{
+      background: none;
+    }
+  }
+  .heading{
+	padding-top:120px;
+	h1{	
+		font-size:42px;
+		color:#403103;
+	}
+	
+  }
+  .heading p{
+	color:#FFF;
+	font-size:12px;
+	margin:0 auto;
+	width:60%;
+	text-align:left;
+  }
+  .heading .startBtn{
+	color:#FFF;
+	margin-top:30px;
+	width:273px;
+	height:53px;
+	background:#D33301;
+	border:none;
+	outline:none;
+  }
+}
+
+.subHeading{
+	font-size:36px;
+}
+.subHeading + p {
+	font-size:22px;
+	margin-bottom:30px;
+}
+#about{
+	background:#1D2233;
+	padding-bottom:65px;
+	.aboutUs{
+		
+		border-top:5px solid #080F2C;
+		color:#FFF;
+		h1{
+			color:#FFF;
+			padding-top:46px;
+			margin-bottom:20px;
+		}
+	}
+	.abtText{
+		color:#62656C;
+		p{
+			width:55%;
+			font-size:16px;
+			color:#666;
+		}
+	}
+	
+
+}
+
+#services{
+	background:url('../images/truckbg.png') no-repeat center center;
+
+	color:#FFF;
+	
+	.truck-type{
+		background:url('../images/curve.png') no-repeat center bottom;
+		height:363px;
+	}
+	.service-text{
+		font-size:16px;
+			color:#666;
+			
+			width:60%;
+			margin:0 auto;
+	}
+}	
+.topmargin{
+	margin-top:30px;
+}
+#clients{
+	background:#DEDEDE;
+	padding-bottom:65px;
+	.client{
+			font-size:35px;
+			color:#333;
+			margin-top:74px;
+		}
+		.client + p {
+			font-size:22px;
+			color:#333;
+			margin-bottom:30px;
+		}
+}
+
+#contactUs{
+	background:url('../images/contactus.png') no-repeat center center;
+	padding-bottom:65px;
+	.contact{
+			font-size:35px;
+			color:#fff;
+			margin-top:74px;
+		}
+		.contact + p {
+			font-size:22px;
+			color:#666;
+			margin-bottom:30px;
+		}
+		.address{
+			font-size:32px;
+			color:#666;
+			font-weight:normal;
+			text-align:center;
+			padding-top:20px;
+		}
+}
+footer{
+	background:#282C35;
+	padding:30px;
+	.policy{
+		font-size:14px;
+		color:#fff;
+	}
+	.socialIcons{
+		li {
+			list-style-type:none;
+			display:inline-block;
+			a.fb{
+			}
+			a.ln{
+			}
+			a.tw{
+				
+			}	
+			a.skype{
+			
+			}
+		}
+	}
+}
