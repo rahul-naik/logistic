@@ -1,0 +1,9 @@
+{
+  "name": "yo",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "latest",
+    "angular": "latest"
+  }
+  
+}
