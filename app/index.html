@@ -16,7 +16,7 @@
 
     <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
-	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="styles/bootstrap.css">
     <!-- endbuild -->
     
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -24,21 +24,23 @@
     <!-- endbuild -->
   </head>
   <body>
-  
+  <div class="moveTop cd-top">
+	  <img src="images/up-arrow.png" />
+  </div>	  
     
    <div class="mainWrapper">
            <header>
               <div class="container-fluid">
                  <div class="row">
                     <div class="col-md-6 text-center">
-                        <img src="images/9.png" alt="logo">
+                        <img class="logo" src="images/logo.png" alt="logo">
                     </div>
                     <div class="col-md-6">
                        <ul class="nav navbar-nav">
-                          <li><a href="#">About Us</a></li> 
-                          <li><a href="#">Services</a></li> 
-                          <li><a href="#">Clients</a></li> 
-                          <li><a href="#">Contact Us</a></li> 
+                          <li><a href="#" data-href="about">About Us</a></li> 
+                          <li><a href="#" data-href="services">Services</a></li> 
+                          <li><a href="#" data-href="clients">Clients</a></li> 
+                          <li><a href="#" data-href="contactUs">Contact Us</a></li> 
                        </ul>
                      </div>    
                   </div>
@@ -88,19 +90,38 @@
 					<p class="service-text">Reference site about Lorem Ipsum, giving information on its origins,as well as random Lipsum generator .Reference site about Lorem Ipsum, giving information on its origins,as well as random Lipsum generator Reference site about Lorem Ipsum, giving information on its origins,as well as random Lipsum generator Reference site about Lorem Ipsum, giving information on its origins,as well as random Lipsum generator </p>
 				</div>
 				<div class="row truck-type">
-					<div class="container">
+					<div class="mobileCranes">
+						<img class="" src="images/mobileCrain.png"/>
+						<div class="text-center category">Moile Cranes</div>
+					</div>
+					<div class="trailer">
+						<img src="images/trailer.png"/>
+						<div class="text-center category">Trailer</div>
+					</div>
+					<div class="heavyT">
+						<img src="images/heavyTruck1.png"/>
+						<div class="text-center category">Heavy Truck</div>
+					</div>
+					<div class="heavyTruk">
+						<img src="images/heavyTruck2.png"/>	
+						<div class="text-center category">Heavy Truck</div>
+					</div>	
+						
+						
+						
+					<!--<div class="container">
 						<div class="row">
 							<div class="col-md-4 text-right">
 								
 							</div>
 							<div class="col-md-4">
 								<div class="pull-left">
-									<img src="images/mobileCrain.png"/>
-									<div class="text-center">Moile Crains</div>
+								
+									<div class="text-center category">Moile Cranes</div>
 								</div>
 								<div class="pull-right">
-									<img src="images/trailer.png"/>
-									<div class="text-center">Trailer</div>
+									
+									<div class="text-center category">Trailer</div>
 								</div>
 							</div>
 							<div class="col-md-4 text-left">
@@ -108,24 +129,24 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-2 text-right">
-								
+							<div class="col-md-3 text-right">
+								<img src="images/heavyTruck1.png"/>
+							    <div class="text-center category">Heavy Truck</div>
 							</div>
-							<div class="col-md-8">
-								<div class="pull-left">
-									<img src="images/mobileCrain.png"/>
-									<div class="text-center">Moile Crains</div>
+							<div class="col-md-6">
+								<!--<div class="pull-left">
+									
 								</div>
 								<div class="pull-right">
-									<img src="images/trailer.png"/>
-									<div class="text-center">Trailer</div>
-								</div>
-							</div>
-							<div class="col-md-2 text-left">
 								
+								</div>--
+							</div>
+							<div class="col-md-3 text-left">
+									<img src="images/heavyTruck2.png"/>
+									<div class="text-center category">Heavy Truck</div>
 							</div>
 						</div>
-					</div>
+					</div>-->
 				</div>
 			</div>
    </section>
@@ -193,12 +214,14 @@
 				</div>
 		</div>
 		<div id="mapContainer" class="text-center">
-			<img src="images/10.png">
+			
+			<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='margin:0 auto;overflow:hidden;height:424px;width:1052px;'><div id='gmap_canvas' style='height:424px;width:1052px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://disclaimergenerator.net">disclaimer generator</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:17,center:new google.maps.LatLng(18.9718646,72.84414590000006),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(18.9718646,72.84414590000006)});infowindow = new google.maps.InfoWindow({content:'<strong>VKD Logistic</strong><br>Mathar Pakhadi Road, Mazgaon, Mumbai, Maharashtra<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+			</script>
 		</div>
 		<div class="address">
-			4,fancy Building, Mahtar Pakhi Road, Mazgaon,<br/>
-			Mumbai - 40010 Tel: +91 022 2374 4583/4 Fax: +91<br/>
-			022 2374 4582 Mobile: +91 9819052602 Email: <br/>
+			4,fancy Building, Mahtar Pakhi Road, Mazgaon,
+			Mumbai - 40010 Tel: +91 022 2374 4583/4 Fax: +91
+			022 2374 4582 Mobile: +91 9819052602 Email:
 			rvdhavale@yahoo.co.in
 		</div>
    </section>
@@ -209,11 +232,11 @@
 					VKD Logistic All Rights Reserved Terms of Use and Privacy Policy
 				</div>
 				<div class="col-md-6">
-					<ul class="socialIcons">
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
-						<li><a href="#"></a></li>
+					<ul class="socialIcons text-right">
+						<li><a class="tw" href="#"></a></li>
+						<li><a class="fb" href="#"></a></li>
+						<li><a class="ln" href="#"></a></li>
+						<li><a class="skype" href="#"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -221,15 +244,15 @@
    </footer>
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="/bower_components/angular/angular.js"></script>
+    <script src="scripts/jquery.js"></script>
+    
+   
     <!-- endbower -->
     <!-- endbuild -->
     
     <!-- build:js scripts/plugins.js -->
     
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+  
     
     <!-- endbuild -->
     
