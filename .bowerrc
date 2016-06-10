@@ -1,6 +1,5 @@
 {
   "directory": "bower_components",
-  "registry": "http://bower.herokuapp.com",
-  "proxy":"http://'470091:happy@368'@proxy.cognizant.com:6050/",
-  "https-proxy":"http://'470091:happy@368'@proxy.cognizant.com:6050/"
+  "registry": "http://bower.herokuapp.com"
+ 
 }

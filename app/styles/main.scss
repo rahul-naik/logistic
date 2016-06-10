@@ -1,0 +1,275 @@
+
+@font-face {
+  font-family: 'segoe-light';
+  src: url('../fonts/segoe-light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/segoe-light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/segoe-light.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'segoe-regular';
+  src: url('../fonts/segoe-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/segoe-regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/segoe-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'segoe-black';
+  src: url('../fonts/segoe-black.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/segoe-black.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/segoe-black.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+
+body{
+	font-family: 'segoe-regular',Arial !important; 
+	position:relative;
+}
+
+.cd-top{
+	visibility: hidden;
+	opacity:0;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  //opacity: .5;
+}
+.moveTop{
+	height:50px;
+	width:50px;
+	background:#FF940B;
+	position:fixed;
+	right:5px;
+	bottom:10px;
+	z-index:1001;
+	img{
+		padding:20px;
+	}
+}
+.mainWrapper {
+  background: url("../images/mainBG.jpg") no-repeat;
+  height: 800px;
+  background-size: cover;
+  border-bottom:5px solid #F44B14;
+}
+
+.nav > li > a:hover, .nav > li > a:focus{
+			 background: none !important;
+		}
+
+.mainWrapper {
+  header {
+    border-bottom: 1px solid #6c6c50;
+		padding-top: 46px;
+    padding-bottom: 24px;
+		
+		.logo{
+			padding-top:7px;
+		}
+		
+  } 
+  .navbar-nav{
+	    
+    li a{
+      color:#FFF;
+	  font-size:15px;
+    }
+    li a:hover , li a:active{
+      background: none;
+    }
+		
+  }
+  .heading{
+	padding-top:120px;
+	h1{	
+		font-size:42px;
+		color:#403103;
+		font-family: 'segoe-black';
+		width:84%; 
+		margin:0 auto;
+	}
+	
+  }
+  .heading p{
+	color:#FFF;
+	font-size:12px;
+	margin:0 auto;
+	width:43%;
+	padding:30px 0;
+	text-align:left;
+  }
+  .heading .startBtn{
+	color:#FFF;
+	width:273px;
+	height:53px;
+	background:#D33301;
+	border:none;
+	outline:none;
+  }
+}
+
+.subHeading{
+	font-size:36px;
+	margin:0;
+	padding-top:68px;
+	    margin-bottom: 20px;
+}
+.subHeading + p {
+	font-size:22px;
+	margin-bottom:30px;
+}
+#about{
+	background:#1D2233;
+	padding-bottom:65px;
+	.aboutUs{
+		
+		border-top:5px solid #080F2C;
+		color:#FFF;
+		h1{
+			color:#FFF;
+			padding-top:46px;
+			margin-bottom:20px;
+		}
+	}
+	.abtText{
+		color:#62656C;
+		p{
+			width:55%;
+			font-size:16px;
+			color:#666;
+		}
+	}
+	
+
+}
+
+#services{
+	background:url('../images/truckbg.png') no-repeat center center;
+	background-size: cover;
+	color:#FFF;
+	
+	.truck-type{
+		background:url('../images/curve.png') no-repeat center bottom;
+		height:363px;
+		position:relative;
+	}
+	.service-text{
+		font-size:16px;
+			color:#b7b4b4;
+			text-align:center;
+			width:60%;
+			margin:0 auto;
+	}
+	.category{
+		font-size:22px;
+		color:#666;
+	}
+	
+	.mobileCranes{
+		position:absolute;
+		top: 2%;
+    left: 35%;
+	}
+	
+	.trailer{
+		position:absolute;
+		top: 2%;
+    left: 55%;
+	}
+	
+	.heavyT{
+		position:absolute;
+		 top: 43%;
+    left: 19%;
+	}
+	
+	.heavyTruk{
+		position:absolute;
+		    top: 43%;
+    left: 70%;   
+	}
+	
+	
+}	
+.topmargin{
+	margin-top:30px;
+}
+#clients{
+	background:#DEDEDE;
+	padding-bottom:65px;
+	.client{
+			font-size:35px;
+			color:#333;
+			margin-top:74px;
+		}
+		.client + p {
+			font-size:22px;
+			color:#333;
+			margin-bottom:30px;
+		}
+}
+
+#contactUs{
+	background:url('../images/contactus.png') no-repeat center center;
+	padding-bottom:65px;
+	    background-size: 100%;
+	.contact{
+			font-size:35px;
+			color:#fff;
+			margin-top:74px;
+		}
+		.contact + p {
+			font-size:22px;
+			color:#666;
+			margin-bottom:30px;
+		}
+		.address{
+			font-size:32px;
+			color:#666;
+			font-weight:normal;
+			padding-top:20px;
+			width: 50%;
+			font-family:'segoe-light';
+			margin: 0 auto;
+			text-align: justify;
+		}
+}
+footer{
+	background:#282C35;
+	padding:10px;
+	.policy{
+		font-size:14px;
+		color:#fff;
+		padding-top:15px;
+	}
+	.socialIcons{
+		padding-top:8px;
+		li {
+			list-style-type:none;
+			display:inline-block;
+			a{
+				height: 30px;
+				width:30px;
+				display:block;
+				background-size:100% !important; 
+			}
+			a.fb{
+					background:url('../images/fb.png') no-repeat center center;	
+			}
+			a.ln{
+					background:url('../images/linkedin.png') no-repeat center center;	
+			}
+			a.tw{
+				background:url('../images/tw.png') no-repeat center center;
+			}	
+			a.skype{
+				background:url('../images/skype.png') no-repeat center center;
+			}
+		}
+	}
+}
